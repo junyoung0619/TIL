@@ -140,3 +140,63 @@
 * 개인, 팀 프로젝트 코드를 공유
 * 오픈소스
 
+> # Readme.md 파일이란
+> * 프로젝트에 대한 설명, 사용 방법, 문서화된 정보 등을 포함하는 역할
+> * Markdown 형식으로 작성되며, 프로젝트의 사용자, 개발자, 혹은 기여자들에게 프로젝트에 대한 전반적인 이해와 활용 방법을 알려줌
+> * 주로 프로젝트의 소개, 설치 및 설정 방법, 사용 예시, 라이선스 정보 등 포함
+> * 반드시 저장소 최상단에 위치해야 원격 저장소에서 올바르게 출력됨( .git파일과 같은 위치)
+
+## git 기타 명령어
+### git remove -v
+* 현재 로컬 저장소에 등록된 원격 저장소 목록 보기
+### git remote rm 원격_저장소_이름
+* 현재 로컬 저장소에 등록된 원격 저장소 삭제
+
+# Git revert
+* `git revert <commit id>` (commit id는 해시코드)
+* 특정 commit을 없었던 일로 만드는 작업
+* commit 기록에서 commit을 삭제하거나 분리하는 대신, 지정된 변경 사항을 반전시키는 새 commit을 생성
+* git에서 기록이 손실되는 것을 방지하며 기록의 무결성과 협업의 신뢰성을 높임
+* 공백을 사용해 여러 commit을 한꺼번에 실행 취소 가능 ex) `git revert 7f6c 006d 3551`
+* `..`을 사용해 범위를 지정하여 여러 commit을 한꺼번에 실행 취소 가능 ex) `git revert v1..v4 (v1,v4은 해시코드)`
+* commit 메시지 작성을 위한 편집기를 열지 않음 (자동으로 commit 진행) `git revert --no-edit 해시코드 `
+* 자동으로 commit 하지 않고, Staging Area에만 올림 (이후에 직접 commit해야함)
+* 이 옵션은 여러 commit을 revert 할 때 하나의 commit으로 묶는 것이 가능 `git revert --no-commit 해시코드`
+# Git reset
+* 특정 commit으로 되돌아가는 작업
+* `git reset [옵션] <commit id>`
+* 특정 commit으로 되돌아 갔을 때, 되돌아간 commit 이후의 commit은 모두 삭제 
+## reset의 3가지 옵션  
+* --soft
+    * 삭제된 commit의 기록을 staging area에 남김
+* --mixed
+    * 삭제된 commit의 기록을 working directory에 남김 (기본 옵션 값)
+* --hard
+    * 삭제된 commit의 기록을 남기지 않음.
+ ## 이미 삭제한 commit으로 돌아가고 싶다면
+ ### git reflog
+ * HEAD가 이전에 가리켰던 모든 commit을 보여줌
+ * 이 후 `git reset --hard 해시주소` 하면 복구 완료  
+## 강제 push
+* remote에서는 first-second-third를 가지고 있어 local에서 reset으로 first만 가진다면 이를 push 하기 위해 git push -f를 사용해야 함
+
+## git undoing
+* 파일 내용을 수정 전으로 되돌리기
+* Staging area에 올라간 파일을 unstage하기
+## 파일 내용을 수정 전으로 되돌리기
+### git restore 
+* 추적하고 있는 파일 대상(기존 작업-한번이라도 commit 등록)
+* Modified 상태의 파일 되돌리기
+    * Working Directory에서 
+### git stash
+* 다른 곳에 내용을 저장하고 현재 상태를 되돌리는 것
+* 그 후 git stash apply 하면 git stash전으로 돌아옴
+## Staging area에 올라간 파일을 unstage하기
+* git rm --cached
+* 추적 대상에서 제외 혹은 삭제
+* Staging area에서 Working Directory로 되돌리기
+    * git 저장소에 commit이 없는 경우
+
+* `git restore --staged`
+    * Staging Area에서 Working Directory로 되돌리기
+        * git 저장소에 commit이 없는 경우
