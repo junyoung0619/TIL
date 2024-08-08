@@ -109,9 +109,12 @@
 ### Queue
 - Queue는 인터페이스, 구현체는 LinkedList를 사용
 - 큐 자료구조: FIFO 가장 먼저 들어온 값이 가장 먼저 나감
-- `boolean offer(E e)`: 데이터를 추가
-- `E peek()`: 가장 앞에 있는 데이터 조회
-- `E poll()`: 가장 앞에 있는 데이터 빼내기
+- `add(E e)`: 데이터 추가, 추가될 수 없으면 예외 발생
+- `boolean offer(E e)`: 데이터를 추가, 추가될 수 없으면 false, 되면 true 리턴
+- `E peek()`: 가장 앞에 있는 데이터 조회, 데이터 없으면 null
+- `E element();`: 가장 앞에 있는 데이터 조회, 데이터 없으면 예외 발생
+- `E remove()` : 가장 앞에 있는 데이터 빼내기, 삭제할 수 없으면 예외 발생
+- `E poll()`: 가장 앞에 있는 데이터 빼내기, 삭제할 수 없으면 return null;
 - `boolean isEmpty()`: 큐가 비어 있는지 여부
 
 ## Stack
