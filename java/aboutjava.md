@@ -18,6 +18,9 @@ for(int j=1;배열 크기;j++){
 }
 ```
 
+- 파일로 받기
+`Scanner sc = new Scanner(new File("input.txt"));` 하면 됨
+
 #### BufferedReader와 StringTokenizer
 - 기본적으로 `import java.io.BufferedReader;` , `import java.io.InputStreamReader;` 후 사용
 - 한 줄에 공백으로 구분된 수들을 다음과 같이 입력받음
@@ -80,7 +83,15 @@ public class Main{
 - `Character.getNumericValue(문자)` : 문자로 표현된 숫자를 숫자로 바꿔주는 함수
 - `Integer.parseInt(문자열)` : 문자열로 표현된 숫자를 숫자로 바꿔주는 함수
     - 예를 들어 `Integer.parseInt("123")` 은 123으로 바꿔줌
-
+- `toCharArray()`문자열이 주어졌을 때 각 요소를 chararray로 바꾸는 기능이 있다.   
+``` java
+String s = "hello";
+char[] arr = s.toCharArray();
+for (char c : arr) {
+    System.out.println(c);
+}
+// 출력: h, e, l, l, o
+```
 #### Heap
 - 자바에서도 최소힙이 클래스로서 구현이 되어 있다.
 - `import java.util.PriorityQueue` 를 기본적으로 해야 한다.

@@ -28,7 +28,7 @@
 // Persontest의 main함수가 스택영역에 할당
 Person p1 = new Person(); // p1에 대한 내용이 힙에 들어감 (name=null,age=0, hobby=null), 참조값이 스택에 들어감 
 p1.name="김싸피";          // 힙에서 김싸피 들어감 
-p1.age=45;                // 힙에 35 들어감
+p1.age=45;                // 힙에 45 들어감
 p1.hobby = "유튜브";       // 힙에 유튜브 들어감
 // 
 ```

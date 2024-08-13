@@ -148,7 +148,7 @@ public class Person{
     }
 }
 Person p=new Person();
-p.info
+p.info();
 ```
 
     - static 이 메서드에 선언되어 있을때는 클래스이름.메서드이름으로 호출
