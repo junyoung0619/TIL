@@ -186,8 +186,8 @@ p.info();
 ``` java
 public class Dog{
     public Dog() {
-        System.ou.println("기본생성자");
-        System.ou.println("클래스 이름과 동일하고 반환타입 X");
+        System.out.println("기본생성자");
+        System.out.println("클래스 이름과 동일하고 반환타입 X");
     }
 }
 ```
