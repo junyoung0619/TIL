@@ -24,7 +24,7 @@
 - 루트 노드 - 트리의 시작 노드
     - 트리 T의 루트 노드 - A
 
-![image](./Tree.md)
+![image](./image/Tree.md)
 
 - 형제 노드 (sibling node) - 같은 부모 노드의 자식 노드들
     - B, C, D는 형제 노드
@@ -34,7 +34,7 @@
 - 자손 노드 - 서브 트리에 있는 하위 레벨의 노드들
     - B의 자손 노드-E,F,K
 
-![imag](./Tree2.PNG)
+![imag](./image/Tree2.PNG)
 
 - 차수(degree)
     - 노드의 차수: 노드에 연결된 자식 노드의 수
@@ -48,7 +48,7 @@
     - 트리의 높이 : 트리에 있는 노드의 높이 중에서 가장 큰 값. 최대 레벨
         - 트리 T의 높이 = 3
 
-![imag](./Tree3.PNG)
+![imag](./image/Tree3.PNG)
 
 ## 이진 트리
 ### 이진 트리
@@ -168,7 +168,7 @@ postorder_traverse(T){
 - 후위 순회: AB?C*D*E+ (식의 후위 표기법)
 - 전위 순회: +**/ABCDE (식의 전위 표기법)
 
-![image](./EBT.PNG)
+![image](./image/EBT.PNG)
 
 ## 힙 (Heap)
 ### 힙
