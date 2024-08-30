@@ -1,1 +1,0 @@
-ele.style.color="orange"
