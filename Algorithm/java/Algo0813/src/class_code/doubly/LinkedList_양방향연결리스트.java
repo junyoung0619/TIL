@@ -1,4 +1,4 @@
-package doubly;
+package class_code.doubly;
 
 class Node {
 	String data;

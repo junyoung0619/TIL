@@ -1,4 +1,4 @@
-package singly;
+package class_code.singly;
 
 class Node {
 	String data;

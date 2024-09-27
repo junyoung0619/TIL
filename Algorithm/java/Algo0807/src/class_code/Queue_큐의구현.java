@@ -1,3 +1,4 @@
+package class_code;
 import java.util.Scanner;
 
 public class Queue_큐의구현 {
@@ -24,7 +25,7 @@ public class Queue_큐의구현 {
 		deQueue();
 
 	}
-	Queue
+
 	// 공백상태 확인
 	static boolean isEmpty() {
 //		if (front == rear) {

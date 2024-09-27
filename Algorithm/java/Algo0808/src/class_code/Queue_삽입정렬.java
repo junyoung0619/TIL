@@ -1,3 +1,4 @@
+package class_code;
 import java.util.Arrays;
 
 public class Queue_삽입정렬 {

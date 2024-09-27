@@ -1,3 +1,4 @@
+package class_code;
 public class Queue_우선순위큐1차원배열 {
 
 	static int[] queue = new int[100];

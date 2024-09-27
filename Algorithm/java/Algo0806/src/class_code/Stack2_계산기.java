@@ -1,4 +1,4 @@
-
+package class_code;
 // 서울 5반 방민규
 
 import java.util.HashMap;

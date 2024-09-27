@@ -1,4 +1,4 @@
-
+package class_code;
 public class Stack2_팩토리얼 {
 
 	public static void main(String[] args) {

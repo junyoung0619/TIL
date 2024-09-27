@@ -1,3 +1,4 @@
+package Day02_부분집합_조합;
 import java.util.Arrays;
 
 public class 부분집합_01_반복문 {

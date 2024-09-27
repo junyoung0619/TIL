@@ -1,4 +1,4 @@
-
+package class_code;
 public class Tree2_수식트리 {
 	static char[] tree = { 0, '+', 'x', '-', '1', '2', '3', '4' };
 

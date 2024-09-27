@@ -1,4 +1,4 @@
-
+package class_code;
 public class Stack2_피보나치 {
 
 	public static void main(String[] args) {

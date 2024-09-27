@@ -1,4 +1,4 @@
-
+package class_code;
 public class Tree2_최소힙 {
 
 	static int[] heap = new int[100];

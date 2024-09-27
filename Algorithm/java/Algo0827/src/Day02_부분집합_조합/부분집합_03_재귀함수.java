@@ -1,3 +1,4 @@
+package Day02_부분집합_조합;
 public class 부분집합_03_재귀함수 {
 	// static 아직 모른다면 이제는 곤란해~~
 	static String[] 재료 = { "단무지", "햄", "오이", "시금치" };

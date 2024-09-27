@@ -1,4 +1,4 @@
-
+package class_code;
 public class Tree_순회 {
 
 	static char[] tree = {0, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 0, 0, 'H', 'I'};
