@@ -24,7 +24,7 @@
         - 서버가 클라이언트의 상태를 저장하지 않음
         - 클라이언트의 상태를 알 수 없기 때문에 추가적인 데이터 전송이 필요함
         - 응답 서버를 쉽게 바꿀 수 있음
-        - 브라우저 쿠기 or 서버 세션 등을 이용하여 상태유지
+        - 브라우저 쿠키 or 서버 세션 등을 이용하여 상태유지
 - HTTP 상태코드
     - 모를 때는 http status code mdn을 검색해보면됨
     - 1XX : Informational response
@@ -95,7 +95,7 @@
     - 서버는 쿠키에 session id가 있는지 확인한다.
     - session id가 존재하지 않으면 session id를 생성해 쿠키에 쓴 다음 클라이언트로 반환
     - 생성된 session id를 이용하며 서버 내 메모리를 생성
-    - 클라이언트가 다음 요청 시 쿠키에 session id를 포함해 전달하면 서버 내에 저장된session id와 비굫아ㅕ 대데이터를 조회
+    - 클라이언트가 다음 요청 시 쿠키에 session id를 포함해 전달하면 서버 내에 저장된session id와 비교하여 대데이터를 조회
 - HttpSession 주요 메서드
 
 ![image](./image/session_method.PNG)
