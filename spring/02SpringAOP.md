@@ -67,7 +67,7 @@
 ## Spring AOP
 ### SPring AOP
 - Advice Type
-    - brfore - target 메서드 호출 이전
+    - before - target 메서드 호출 이전
     - after - target 메서드 호출 이후, java exception 문장의 finally와 같이 동작
     - after returning - target 메서드 정상 동작 후
     - after throwsing - target 메서드 에러 발생 후
