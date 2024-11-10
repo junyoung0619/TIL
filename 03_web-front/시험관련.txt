@@ -1,0 +1,12 @@
+HTML - 태그 inline/block
+
+CSS - 속성
+        선언
+	link href
+JS var, let, const의 특징 - scope, 재할당
+undefined, null의 차이점
+arr[0]=1
+arr[2]=윤정
+-> arr[1]은 undefined임
+
+DOM, Event - 어떤 메서드로 접근하는지..
