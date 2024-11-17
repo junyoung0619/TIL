@@ -49,7 +49,7 @@
         - 따라서 todos가 변경될 때만 restOfTodos가 업데이트 됨
 
 - computed와 동일한 로직을 처리할 수 있는 method
-    - computed 속성 대신 methdo로 동일한 기능을 정의할 수 있음
+    - computed 속성 대신 method로 동일한 기능을 정의할 수 있음
     - 두 가지 접근 방식은 실제로 완전히 동일
 
     ``` js
@@ -121,7 +121,7 @@
         <div>AI기능이 있습니다.</div>
     </template>
     ```
-- HTML <template> element
+- HTML `<template>` element
     - 페이지가 로드 될 때 렌더링 되지 않지만 JavaScript를 사용하여 나중에 문서에서 사용할 수 있도록 하는 HTML을 보유하기 위한 메커니즘
     - "보이지 않는 wreapper 역할"
 - v-show   
@@ -131,7 +131,7 @@
 
     ``` js
     const isShow = ref(false)
-    <div v-show="isShoe">v-show</div>
+    <div v-show="isShow">v-show</div>
     ```
 
 - v-if vs v-show
@@ -214,7 +214,7 @@
     ])
 
     <ul>
-        <li v-for="todo in todos" v-if="todo.isComplet === true" :key="todo.id">
+        <li v-for="todo in todos" v-if="todo.isComplete === true" :key="todo.id">
         {{todo.name}}
         </li>
     </ul>
@@ -303,8 +303,11 @@
      - 개발자가 특정 단계에서 의도하는 로직이 실행될 수 있도록 함
 - Lifecycle Hooks 예시
     1. Vue 컴포넌트 인스턴스가 초기 렌더링 및 DOM 요소 생성이 완료된 후 특정 로직을 수행하기
+        - onMounted
 
     2. 반응형 데이터의 변경으로 인해 컴포넌트의 DOM이 업데이트된 후 특정 로직 수행하기
+        - onUpdated
+        
 - Lifecycle Hooks 예시 특징
 
 ## Vue Style Guide

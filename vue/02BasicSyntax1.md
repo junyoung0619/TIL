@@ -66,14 +66,14 @@
 
         - 예시
             - v-if는 seen 표현식 값의 T/F를 기반으로 <p> 요소를 제거 / 삽입
-            - `<p v-if="seen"Hi THERE</p>`
+            - `<p v-if="seen">Hi THERE</p>`
 
 - Directive 전체 구문
     - v-on:submit.prevent="onSubmit"
     - Name, Argument, Modifienrs, Value
 - Directive - Arguments
     - 일부 directive 는 directive 뒤에 콜론으로 표시되는 인자를 사용 가능
-    - 아래 예시의 href는 HTML <a> 요소의 href 속성 값을 myUrl 값에 바인딩 하도록 하는 v-bind 인자
+    - 아래 예시의 href는 HTML `<a>` 요소의 href 속성 값을 myUrl 값에 바인딩 하도록 하는 v-bind 인자
     `<a v-bind:href="myUrl">Link<a>`
     - 아래 예시의 click은 이벤트 수신할 이벤트 이름을 작성하는 v-on의 인자
     `<button v-on:click="doSomething">Button</button>`
@@ -85,7 +85,7 @@
 
 - Built-in Directives
 
-[image](./image/builtin.PNG)
+![image](./image/builtin.PNG)
 
 ## Dynamically data binding
 ### Dynamically data binding

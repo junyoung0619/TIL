@@ -1,0 +1,75 @@
+# 서버 연동
+- Axios
+- Vue.js 게시판
+
+## Axios
+### Axios
+- 집안일 목록
+    - 세탁기 돌리기 -> 건조기 돌리기 -> 빨래 개기
+    - 치킨 주문하기 -> 치킨 먹기 -> 치킨 정리하기
+    - 로봇청소기 돌리기 -> 로봇청소기 비우기
+    - 쓰레기 분리수거 하기
+    - 동기적인 일처리 + 비동기적인 일처리
+- AJAX (Asynchronous JavaScript and XML)
+    - 서버와 통신을 하기 위해서 XMLHttpRequest 객체를 활용
+    - JSON, XML, HTML 그리고 일반 텍스트 형식 등을 포함한 다양한 포맷을 주고 받을 수 있음.
+    - 페이지 전체를 '새로 고침' 하지 않고서도 수행 되는 "비동기성" (일 부분만 업데이트 가능)
+- XMLHttpRequest
+    - 서버와 상호작용하기 위해 사용
+    - 전체 페이지의 새로 고침 없이도 URL로부터 데이터를 받아 올 수 있음
+    - 사용자의 작업을 방해하지 않고 페이지의 일부를 업데이트 할 수 있음
+    - 다양한 종류의 데이터를 받아 오는데 사용 가능
+    - http 이외의 프로토콜도 지원 (file, ftp 포함)
+    - 대부분의 브라우저에서 지원
+- Promise Methods
+    - `.then(callback)`
+        - Promise 객체를 리턴하고 두 개의 콜백 함수를 인수로 받는다. (이행 했을 때, 거부 했을 때)
+        - 콜백 함수는 이전 작업의 성공 결과를 인자로 전달 받음.
+    - `.catch(callback)`
+        - .then이 하나라도 실패하면(거부 되면) 동작 (예외 처리 구문 유사)
+        - 이전 작업의 실패로 인해 생성된 error 객체는 catch 블록 안에서 사용 가능
+    - `.finally(callback)`
+        - Promise 객체 반환
+        - 결과 상관없이 무조건 실행
+- Fetch API
+    - XMLHttpRequest 보다 강력하고 유연한 조작이 가능
+    - Promise를 지원하므로 콜백 패턴에서 자유로움
+    - `fetch(resource, options)` 메서드 사용
+    - fetch() 메서드는 HTTP 응답을 나타내는 Response 객체를 래핑한 Promise 객체를 반환
+- Axios
+    - 브라우저와 node.js에서 사용할 수 있는 Promise 기반 HTTP 클라이언트 라이브러리
+    - 특징
+        - 브라우저를 위해 XMLHttpRequests 생성
+        - node.js를 위해 http 요청 생성
+        - Promise API를 지원
+        - 요청 및 응답 인터셉트
+        - 요청 및 응답 데이터 변환
+        - 요청 취소
+        - JSON 데이터 자동 변환
+        - XSRF를 막기위한 클라이언트 사이드 지원
+- Axios 설치
+    - npm 사용
+        - `npm install axios`
+    - jsDelivr CDN 사용하기
+        - `<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>`
+    - unpkg CDN 사용하기
+        - `<script src="https://unpkg.com/axios/dist/axios.min.js"></script>`
+- Axios 맛보기 (Dog API) - Vue 사용 x
+    - 랜덤 강아지 이미지 API (https://dog.ceo/api/breeds/image/random)
+    - XMLHttpRequest
+    - Fetch
+    - Axios
+- Axios 맛보기 (Cat API)
+    - Axios 작성
+    - 페이지가 연결될 때 요청해보자
+- Axios API
+    - axios(config)
+    - axios( url[,config])
+    - axios.request(config)
+    - axios.get(url[,config])
+    - axios.delete(url[,config])
+    - axios.head(url[,config])
+    - axios.options(url[,config])
+    - axios.post(url[,data[,config]])
+    - axios.put(url[,data[,config]])
+    - axios.patch(url[,data[,config]])

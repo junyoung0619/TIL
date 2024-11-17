@@ -2,7 +2,7 @@
     <div>
         <h3>부모 컴포넌트</h3>
         <ParentChild @update-nameeee="updateNameeeee" @some-event="someCallback" @emit-argss="getNumber"
-        my-msg="message" :dynamic-name="name" :person="person"/>
+        :my-msg="message" :dynamic-name="name" :person="person"/>
     </div>
 </template>
 
