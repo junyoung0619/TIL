@@ -30,7 +30,7 @@
         - Advice가 적용될 수 있는 위치 (메서드 실행, 생성자 호출 등)
         - Spring AOP에서는 메서드 실행 지점으로 제한
     - Point Cut 
-        - Joint Point 중에서 Adviceㄹㄹ 적용하기 위한 조건 서술
+        - Joint Point 중에서 Advice를 적용하기 위한 조건 서술
         - Aspect 는 지정한 Point Cut에 일치하는 모든 Join Point에서 실행
     - Advice
         - 부가 기능, 특정 Join Point에서 취해지는 행동
